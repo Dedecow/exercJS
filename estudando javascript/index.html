@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Exercícios</title>
+</head>
+<body>
+    <p class="a"><a href="https://www.google.com/"></a>"Estudar: A salvação para quem não sabe, desde sempre!"</p>
+
+    <!-- M1S04 Cadastrar Aluno-->
+    <script>
+        let aluno = null;
+        let idade = null;
+
+        aluno = prompt("Digite seu nome:");
+        idade = prompt("Digite sua idade:");
+        
+        let confirmacao = confirm(" Voce digitou:  " + aluno + "\nIdade: " + idade);
+    
+    
+    // Concatenação de nomes -->
+    
+        let msg = "Seu nome é: " + aluno + " e sua idade é " + idade + " anos.";
+        confirmacao = confirm("Você confirmou os dados: " + msg);
+
+    //<!-- Calculo do IMC-->
+        let peso = prompt("Digite seu peso: "); 
+        let altura = prompt("Digite sua altura: ");
+        let imc = peso / (altura * altura);
+        Confirmacao = confirm("O IMC é: " + imc);
+
+
+    //<!-- Média e média ponderada -->
+        let nota1 = prompt("Digite a primeira nota: ");
+        nota1 = parseFloat(nota1);
+        let nota2 = prompt("Digite a segunda nota: ");
+        nota2 = parseFloat(nota2);
+        let nota3 = prompt("Digite terceira nota: ");
+        nota3 = parseFloat(nota3);
+        let media = (nota1 + nota2 + nota3) / 3;
+        confirmacao = confirm("O valor da média caculado foi: " + media);
+    
+    
+        let peso1 = 2;
+        let peso2 = 3;
+
+        let mediaPonderada = (nota1 * peso1 + nota2 * peso2) / (peso1 + peso2);
+        confirmacao = confirm("A média ponderada é: " + mediaPonderada);
+    </script>
+
+</body>
+</html>
